@@ -31,8 +31,11 @@ mv model_ckpt/ MLMAS_Project/ML_Models/transfuser-2022/
 echo "4.Downloading CARLA 0.9.10.1 with the required AdditionalMaps"
 mkdir CARLA_0.9.10.1
 cd CARLA_0.9.10.1
-wget https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/CARLA_0.9.10.1.tar.gz
-wget https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/AdditionalMaps_0.9.10.1.tar.gz
+#wget https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/CARLA_0.9.10.1.tar.gz
+#wget https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/AdditionalMaps_0.9.10.1.tar.gz
+wget https://carla-releases.b-cdn.net/Linux/CARLA_0.9.10.1.tar.gz
+
+wget https://carla-releases.b-cdn.net/Linux/AdditionalMaps_0.9.10.1.tar.gz
 
 echo "5.Extracting CARLA and MAP folders"
 tar -xf CARLA_0.9.10.1.tar.gz
